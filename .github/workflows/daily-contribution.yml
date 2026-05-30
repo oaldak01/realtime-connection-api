@@ -30,7 +30,7 @@ jobs:
           if [ "$COUNT" -ge 5 ]; then
             echo "Weekly limit reached"
             echo "run=false" >> $GITHUB_OUTPUT
-          elif [ $RAND -lt 3 ]; then
+          elif [ $RAND -lt 2 ]; then
             echo "Random skip"
             echo "run=false" >> $GITHUB_OUTPUT
           else
